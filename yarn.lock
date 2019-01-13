@@ -942,7 +942,7 @@
     "@svgr/core" "^2.4.1"
     loader-utils "^1.1.0"
 
-"@types/google-maps-react@^2.0.1":
+"@types/google-maps-react@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/google-maps-react/-/google-maps-react-2.0.1.tgz#e4c8a181dd35abedc08fb35cd522e8595d49cc0f"
   integrity sha512-NGr76/ogkd9emXGIRvIMSRyyNgH/oad/zZmfaw7lOWBg8V9kk0FlUOCrvvPQw7PwF0u/B/Qxd3Bxcs5l/VXvHw==
@@ -4606,7 +4606,7 @@ glogg@^1.0.1:
   dependencies:
     sparkles "^1.0.0"
 
-google-maps-react@^2.0.2:
+google-maps-react@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/google-maps-react/-/google-maps-react-2.0.2.tgz#e03fbba032fe570fb38744bf9cd10b946c591cae"
   integrity sha512-6cYauGwt22haDUrWxKQ6yoNOqjiuxHo8YYcmb+aBvNICokdXmZOUB6Ah4vD5VexMVlrwP2PFqA/D8sHpEB52KA==
@@ -8868,7 +8868,7 @@ react-docgen-displayname-handler@^2.1.0:
   dependencies:
     ast-types "0.11.5"
 
-react-docgen-typescript@^1.12.3:
+react-docgen-typescript@1.12.3:
   version "1.12.3"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.12.3.tgz#fe62a5ce82e93573e316366e53adfe8273121c70"
   integrity sha512-s1XswWs4ykNdWKsPyfM4qptV5dT8nnjnVi2IcjoS/vGlRNYrc0TkW0scVOrinHZ+ndKhPqA4iVNrdwhxZBzJcg==
@@ -8990,7 +8990,7 @@ react-scripts@2.1.3:
   optionalDependencies:
     fsevents "1.2.4"
 
-react-styleguidist@^8.0.6:
+react-styleguidist@8.0.6:
   version "8.0.6"
   resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-8.0.6.tgz#367f3f9f05c7eac7ea18f17f55ff8f4252b77c45"
   integrity sha512-hhbU0dP14boD7j09p9d1pjhB/KWptX8WmsYHFwEhuLVUj10Frkd8FeClS+4JmCiPWe6DoFKxK/iJSzel7pOWUw==
