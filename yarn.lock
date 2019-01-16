@@ -8925,10 +8925,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-navi@0.10.6:
-  version "0.10.6"
-  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.10.6.tgz#724ad7e4d126ce34cc61e59905f0d1603959d9ae"
-  integrity sha512-EwKzFSeyBhNqVA7sWdSt1rWG/NE5Vndjz1zgioiAk6cr9SSAfmMc9A5sSkY9qWIa8D8VNr7dJT8u3yPpDIrS2g==
+react-navi@0.10.9:
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.10.9.tgz#b0f33c920dade37bf046fe09d10fcda2fe487d66"
+  integrity sha512-n9U8m/Z9a3D2mJR5HQ67+gQhnX8Jry9+9T0uTa263xFqk1499tRJJzTdc5xU9xZwlNthVwerx2iUk/KktH7U9g==
   dependencies:
     "@types/history" "^4.6.2"
     "@types/react" "^16.4.6"
