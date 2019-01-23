@@ -23,9 +23,9 @@ const MapContainer: React.FunctionComponent<MapContainerProps> = ({google}) => {
         lng: -72.52,
       }}
     >
-      {/* <Marker />
+      <Marker />
 
-      <InfoWindow google={google} map={} marker={}>
+      {/* <InfoWindow google={google} map={map} marker={}>
         <div>
           <h1>{selectedPlace.name}</h1>
         </div>
