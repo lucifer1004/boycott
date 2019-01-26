@@ -1,3 +1,106 @@
-.App {
-  text-align: center;
+/* Navigation */
+
+header {
+  display: flex;
+  background-color: #1f3134;
+}
+
+nav {
+  margin: 5px;
+  padding: 5px;
+}
+
+nav a {
+  color: white;
+}
+
+/* MapBox */
+
+.map {
+  display: flex;
+}
+
+.box {
+  width: 80vw;
+}
+
+.map-content {
+  height: 90vh;
+  width: 100%;
+}
+
+/* Search */
+
+.filter {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+input {
+  font-size: 1.2em;
+}
+
+.search {
+  display: flex;
+  align-items: stretch;
+}
+
+.search-input {
+  border: 1.5px solid #6c848d;
+  border-right: none;
+  flex: 2;
+  padding: 5px;
+}
+
+.search-input:focus {
+  background-color: antiquewhite;
+}
+
+.search-submit {
+  background-color: #1f3134;
+  border: 1.5px solid #6c848d;
+  color: white;
+  cursor: pointer;
+  flex: 1;
+  letter-spacing: 2px;
+  padding: 5px 0;
+}
+
+.filter-result {
+  list-style-type: none;
+}
+
+/* Effects */
+
+/* Breakpoints */
+
+@media (max-width: 1400px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .search-input {
+    border-right: 1.5px solid #6c848d;
+  }
+}
+
+@media (max-width: 600px) {
+  .map {
+    flex-direction: column;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .map-content {
+    height: 50vh;
+    width: 100%;
+  }
 }
