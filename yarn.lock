@@ -897,12 +897,13 @@
     log-update "^2.3.0"
     strip-ansi "^3.0.1"
 
-"@lucifer1004/react-google-map@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-0.2.0.tgz#ee60ecf93a6cf73c458266d7b9d5cc325bfe24a6"
-  integrity sha512-yd3zySsVN8arKm1HkBHpQTW0tHkt/f9dRTxnerKKvgW0lG2zVzBWYXgUWJ7lcN16VwH+hLvHU/ccALGA15/Whw==
+"@lucifer1004/react-google-map@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-2.0.0.tgz#1377148a631682d4952cbf3092565f616b9e3a91"
+  integrity sha512-ENGoKxMsaKjWzJUQ+uShPOvB9qrb5Z/8YRWykrWYZO6omdqLnxOzReH25iYs2OaiL5toEwhinHoeuIMLiTmpsg==
   dependencies:
     loadjs "3.5.5"
+    lodash.isequal "4.5.0"
     react "16.8.0-alpha.1"
     react-dom "16.8.0-alpha.1"
 
@@ -6604,6 +6605,11 @@ lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
+lodash.isequal@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
