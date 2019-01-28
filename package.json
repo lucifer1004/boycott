@@ -7,7 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "@lucifer1004/react-google-map": "2.0.0",
-    "google-maps-react": "2.0.2",
     "navi": "0.10.12-0",
     "react": "16.8.0-alpha.1",
     "react-dom": "16.8.0-alpha.1",
