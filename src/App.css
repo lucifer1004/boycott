@@ -14,31 +14,33 @@ nav a {
   color: white;
 }
 
-/* MapBox */
+/* Mapmap-container */
 
-.map {
+.content {
   display: flex;
 }
 
-.box {
+.map-container {
   width: 80vw;
 }
 
 .map-content {
   height: 90vh;
+  padding-top: 38px;
   width: 100%;
 }
 
 /* Search */
 
-.filter {
+.info-panel {
   align-items: stretch;
   display: flex;
   flex-direction: column;
   width: 20vw;
 }
 
-input {
+input,
+button {
   font-size: 1.2em;
 }
 
@@ -51,24 +53,30 @@ input {
   border: 1.5px solid #6c848d;
   border-right: none;
   flex: 2;
-  padding: 5px;
+  width: 100%;
 }
 
 .search-input:focus {
-  background-color: antiquewhite;
+  background-color: #eaedf7;
 }
 
 .search-submit {
   background-color: #1f3134;
   border: 1.5px solid #6c848d;
+  cursor: pointer;
+  flex: 1;
+}
+
+.search-submit-button {
+  background-color: #1f3134;
+  border: none;
   color: white;
   cursor: pointer;
   flex: 1;
   letter-spacing: 2px;
-  padding: 5px 0;
 }
 
-.filter-result {
+.search-result {
   list-style-type: none;
 }
 
@@ -82,20 +90,20 @@ input {
   }
 
   .search-input {
-    border-right: 1.5px solid #6c848d;
+    border: none;
   }
 }
 
 @media (max-width: 600px) {
-  .map {
+  .content {
     flex-direction: column;
   }
 
-  .filter {
+  .info-panel {
     width: 100%;
   }
 
-  .box {
+  .map-container {
     width: 100%;
   }
 
