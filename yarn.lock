@@ -6714,10 +6714,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-navi-scripts@0.10.12-0:
-  version "0.10.12-0"
-  resolved "https://registry.yarnpkg.com/navi-scripts/-/navi-scripts-0.10.12-0.tgz#650be54ec659a4d2a5bdf5c8c8ca5d7906d7a1cb"
-  integrity sha512-HdYeIniMqOoN4ouCkXcekRx8irPoYNno6uxnFb0w5b3545B85U7P+6+T0wOGwSwdFf4ZHjcM/FrCQ/psgeJz2Q==
+navi-scripts@0.10.13:
+  version "0.10.13"
+  resolved "https://registry.yarnpkg.com/navi-scripts/-/navi-scripts-0.10.13.tgz#005980aec5a818f36053daad70d80ccd7402eaef"
+  integrity sha512-dXylE3WPc7lVi/s9vBY7D0z7RxigQpgDl/BZX1bBIAHB4I5vdV5MO1156m2pcyry0lTquqNsZgdN2jx2PSikoQ==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/preset-env" "^7.1.0"
