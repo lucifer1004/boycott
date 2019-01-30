@@ -1,23 +1,75 @@
 import React, {useContext, useEffect, useState} from 'react'
+import {debounce, throttle} from 'lodash'
 import {
   Marker,
   GoogleMapContext,
   InfoWindow,
 } from '@lucifer1004/react-google-map'
 
+interface MarkerState {
+  center: google.maps.LatLngLiteral
+  content: string
+  dragging: boolean
+  showInfoWindow: boolean
+}
+
 export default () => {
   const {state} = useContext(GoogleMapContext)
-  const [show, setShow] = useState(false)
-  const [center, setCenter] = useState({
-    lat: 0,
-    lng: 0,
-  } as google.maps.LatLngLiteral)
-  const [content, setContent] = useState('This is an info window')
+  const [markerState, setMarkerState] = useState<MarkerState>({
+    center: {lat: 0, lng: 0},
+    content: 'Lat: 0 Lng: 0',
+    dragging: false,
+    showInfoWindow: false,
+  })
+
   const marker = state.markers.find(marker => marker.getLabel() === 'hello')
-  const handleMarkerClick = () => setShow(prevShow => !prevShow)
-  const handleMarkerDragEnd = (event: google.maps.MouseEvent) => {
+
+  // Set dispatchers
+  const changeInfoWindowState = () =>
+    setMarkerState(prevState => {
+      return prevState.dragging
+        ? prevState
+        : {...prevState, showInfoWindow: !prevState.showInfoWindow}
+    })
+  const setInfoWindow = (show: boolean) =>
+    setMarkerState(prevState => {
+      return prevState.dragging
+        ? prevState
+        : {...prevState, showInfoWindow: show}
+    })
+  const setDragging = (dragging: boolean) =>
+    setMarkerState(prevState => {
+      return {...prevState, dragging: dragging}
+    })
+  const setCenter = (center: google.maps.LatLngLiteral) => {
+    setMarkerState(prevState => {
+      return {
+        ...prevState,
+        center: center,
+        content: `Lat: ${center.lat.toFixed(4)} Lon: ${center.lng.toFixed(4)}`,
+      }
+    })
+  }
+
+  // Set handlers
+  const handleMarkerClick = () => {
+    changeInfoWindowState()
+  }
+  const handleMarkerDragStart = (event: google.maps.MouseEvent) => {
+    setDragging(true)
+  }
+  const handleMarkerDrag = throttle((event: google.maps.MouseEvent) => {
     setCenter(event.latLng.toJSON())
-    setContent(`Current position: ${event.latLng.toString()}`)
+  }, 100)
+  const handleMarkerDragEnd = (event: google.maps.MouseEvent) => {
+    setDragging(false)
+    setCenter(event.latLng.toJSON())
+  }
+  const handleMouseOver = throttle((event: google.maps.MouseEvent) => {
+    setInfoWindow(true)
+  }, 100)
+  const handleMouseOut = (event: google.maps.MouseEvent) => {
+    setInfoWindow(false)
   }
 
   useEffect(() => {
@@ -36,20 +88,22 @@ export default () => {
         opts={{
           draggable: true,
           label: 'hello',
-          position: center,
+          position: markerState.center,
         }}
         onClick={handleMarkerClick}
+        onDrag={handleMarkerDrag}
+        onDragStart={handleMarkerDragStart}
         onDragEnd={handleMarkerDragEnd}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
       />
       <InfoWindow
         anchor={marker}
         opts={{
-          content: content,
+          content: markerState.content,
         }}
-        visible={show}
-        onCloseClick={() => {
-          setShow(false)
-        }}
+        visible={markerState.showInfoWindow}
+        onCloseClick={() => setInfoWindow(false)}
       />
     </>
   )
