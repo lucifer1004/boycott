@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {debounce, throttle} from 'lodash'
+import {delay, debounce, throttle} from 'lodash'
 import {
   Marker,
   GoogleMapContext,
@@ -69,7 +69,7 @@ export default () => {
     setInfoWindow(true)
   }, 100)
   const handleMouseOut = (event: google.maps.MouseEvent) => {
-    setInfoWindow(false)
+    delay(() => setInfoWindow(false), 100)
   }
 
   useEffect(() => {
