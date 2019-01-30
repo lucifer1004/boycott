@@ -8,7 +8,7 @@ import {
 } from 'react-navi'
 import './App.css'
 
-export default ({navigation}: {navigation: any}) => (
+const App = ({navigation}: {navigation: any}) => (
   <NavProvider navigation={navigation}>
     <NavLoading>
       {loadingRoute => (
@@ -29,19 +29,6 @@ export default ({navigation}: {navigation: any}) => (
       )}
     </NavLoading>
   </NavProvider>
-
-  // <NavProvider navigation={navigation}>
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <h1 className="App-title">
-  //         <NavLink href="/">Navi</NavLink>
-  //       </h1>
-  //     </header>
-  //     <NavNotFoundBoundary render={renderNotFound}>
-  //       <NavContent />
-  //     </NavNotFoundBoundary>
-  //   </div>
-  // </NavProvider>
 )
 
 const renderNotFound = () => {
@@ -51,3 +38,7 @@ const renderNotFound = () => {
     </div>
   )
 }
+
+App.displayName = 'NeighborhoodMap'
+
+export default App

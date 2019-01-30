@@ -1,8 +1,11 @@
+/* General */
+
 /* Navigation */
 
 header {
-  display: flex;
   background-color: #1f3134;
+  display: flex;
+  height: 40px;
 }
 
 nav {
@@ -14,19 +17,21 @@ nav a {
   color: white;
 }
 
-/* Mapmap-container */
+/* Map-container */
 
 .content {
   display: flex;
+  height: calc(100vh - 40px);
 }
 
 .map-container {
-  width: 80vw;
+  display: flex;
+  flex: 4;
+  flex-direction: column;
 }
 
 .map-content {
-  height: 90vh;
-  padding-top: 38px;
+  flex-grow: 1;
   width: 100%;
 }
 
@@ -36,7 +41,7 @@ nav a {
   align-items: stretch;
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  flex: 1;
 }
 
 input,
@@ -53,6 +58,7 @@ button {
   border: 1.5px solid #6c848d;
   border-right: none;
   flex: 2;
+  outline: none;
   width: 100%;
 }
 
@@ -60,20 +66,18 @@ button {
   background-color: #eaedf7;
 }
 
-.search-submit {
-  background-color: #1f3134;
-  border: 1.5px solid #6c848d;
-  cursor: pointer;
-  flex: 1;
-}
-
 .search-submit-button {
   background-color: #1f3134;
-  border: none;
+  border: 1.5px solid #6c848d;
   color: white;
   cursor: pointer;
   flex: 1;
   letter-spacing: 2px;
+  outline: none;
+}
+
+.search-submit-button:focus {
+  background-color: #6c848d;
 }
 
 .search-result {

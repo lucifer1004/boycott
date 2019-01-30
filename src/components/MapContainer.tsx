@@ -1,8 +1,14 @@
-import React, {useContext, useLayoutEffect, useState} from 'react'
-import {MapBox, Marker, GoogleMapContext} from '@lucifer1004/react-google-map'
+import React, {useContext, useLayoutEffect, useState, useEffect} from 'react'
+import {
+  MapBox,
+  Marker,
+  GoogleMapContext,
+  InfoWindow,
+} from '@lucifer1004/react-google-map'
 
 export default () => {
   const {state, dispatch} = useContext(GoogleMapContext)
+  const [show, setShow] = useState(false)
   const [center, setCenter] = useState({lat: 0, lng: 0})
   useLayoutEffect(() => {
     if (navigator.geolocation)
@@ -14,13 +20,9 @@ export default () => {
       )
   }, [])
 
-  const getPosition = (position: Position) => {
-    return {lat: position.coords.latitude, lng: position.coords.longitude}
-  }
-
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(getPosition)
-  }
+  useEffect(() => {
+    console.log('show is', show)
+  })
 
   return (
     <div className="map-container">
@@ -41,6 +43,17 @@ export default () => {
           label: 'hello',
           position: center,
         }}
+        onClick={() => {
+          console.log(show)
+          setShow(!show)
+        }}
+      />
+      <InfoWindow
+        anchor={state.markers.find(marker => marker.getLabel() === 'hello')}
+        opts={{
+          content: 'My info window',
+        }}
+        visible={show}
       />
     </div>
   )
