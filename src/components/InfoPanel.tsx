@@ -8,41 +8,17 @@ import React, {
 import {GoogleMapContext} from '@lucifer1004/react-google-map'
 import {useDebounce} from '../hooks'
 
-const handleClick = (
-  markers: google.maps.Marker[] | undefined,
-  filter: string,
-) => {
-  if (markers === undefined) return
-  markers
-    .filter(marker => marker.getLabel() === filter)
-    .forEach(marker => marker.setVisible(!marker.getVisible()))
-}
-
-const Button = ({
-  markers,
-  text,
-  filter,
-  onClick,
-}: {
-  markers: google.maps.Marker[]
-  text: string
-  filter: string
-  onClick: (markers: google.maps.Marker[] | undefined, filter: string) => void
-}) => (
-  <button
-    className="search-submit-button"
-    onClick={() => onClick(markers, filter)}
-  >
-    {text}
-  </button>
-)
-
 export default () => {
-  const {state, dispatch} = useContext(GoogleMapContext)
+  const {state} = useContext(GoogleMapContext)
   const [keyword, setKeyword] = useState('')
   const debouncedKeyword = useDebounce(keyword, 1000)
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setKeyword(event.target.value)
+  }
+  const handleClick = (id: string) => {
+    const marker = state.markers.get(id)
+    if (marker === undefined) return
+    marker.setVisible(!marker.getVisible())
   }
 
   useEffect(() => {
@@ -61,12 +37,12 @@ export default () => {
           value={keyword}
           onChange={handleChange}
         />
-        <Button
-          markers={state.markers}
-          text="GO!"
-          filter="hello"
-          onClick={handleClick}
-        />
+        <button
+          className="search-submit-button"
+          onClick={() => handleClick('marker')}
+        >
+          GO!
+        </button>
       </div>
       <ul className="search-result">
         <li>Highlight</li>
