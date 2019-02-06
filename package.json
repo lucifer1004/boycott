@@ -9,8 +9,8 @@
     "@lucifer1004/react-google-map": "2.1.0",
     "lodash": "4.17.11",
     "navi": "0.10.13",
-    "react": "16.8.0-alpha.1",
-    "react-dom": "16.8.0-alpha.1",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
     "react-navi": "0.10.13"
   },
   "devDependencies": {
