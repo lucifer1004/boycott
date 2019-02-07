@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {MapBox} from '@lucifer1004/react-google-map'
 
 export default () => {
-  const [center, setCenter] = useState({lat: 0, lng: 0})
+  const [center, setCenter] = useState({lat: 40.7128, lng: -74.006})
   useEffect(() => {
     if (navigator.geolocation)
       navigator.geolocation.getCurrentPosition((position: Position) =>

@@ -10,5 +10,9 @@ export default createSwitch({
       title: 'About',
       getContent: () => import('./about'),
     }),
+    '/places': createPage({
+      title: 'Google Map Places',
+      getContent: () => import('./places'),
+    }),
   },
 })

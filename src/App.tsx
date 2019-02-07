@@ -19,6 +19,9 @@ const App = ({navigation}: {navigation: any}) => (
               <NavLink href="/">Home</NavLink>
             </nav>
             <nav>
+              <NavLink href="/places">Places</NavLink>
+            </nav>
+            <nav>
               <NavLink href="/about">About</NavLink>
             </nav>
           </header>

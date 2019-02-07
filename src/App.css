@@ -80,8 +80,13 @@ button {
   background-color: #6c848d;
 }
 
-.search-result {
+.search-results {
   list-style-type: none;
+  overflow: scroll;
+}
+
+.search-result {
+  margin: 0;
 }
 
 /* Effects */
