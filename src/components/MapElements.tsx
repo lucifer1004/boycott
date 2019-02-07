@@ -7,13 +7,13 @@ import {
 } from '@lucifer1004/react-google-map'
 import {YelpBusinessesSearchResult} from '../common'
 
-interface MarkerProps {
+interface MapElementsProps {
   result: YelpBusinessesSearchResult
   infoDisplay: boolean
-  setInfoDisplay: React.Dispatch<React.SetStateAction<boolean>>
+  setInfoDisplay: (show?: boolean) => void
 }
 
-export default ({result, infoDisplay, setInfoDisplay}: MarkerProps) => {
+export default ({result, infoDisplay, setInfoDisplay}: MapElementsProps) => {
   const {state} = useContext(GoogleMapContext)
   const decoratedContent = (content: string) => `
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -22,13 +22,13 @@ export default ({result, infoDisplay, setInfoDisplay}: MarkerProps) => {
           ${content}
         </a>
       </strong>
-      <img src=${result.image_url} width="100px" />
+      <img src=${result.image_url} alt=${result.name} width="100px" />
     </div>
   `
 
   // Set handlers
   const handleClick = () => {
-    setInfoDisplay(value => !value)
+    setInfoDisplay()
   }
   const handleMouseOver = (event: google.maps.MouseEvent) => {
     setInfoDisplay(true)

@@ -1,10 +1,4 @@
-import React, {
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-  useLayoutEffect,
-} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {GoogleMapContext} from '@lucifer1004/react-google-map'
 import {useDebounce} from '../hooks'
 import {businessesSearch} from '../helpers/YelpAPI'
@@ -15,43 +9,20 @@ import {initialBusinesses} from '../common/defaultData'
 export default () => {
   const {state} = useContext(GoogleMapContext)
   const [keyword, setKeyword] = useState('')
-  // const [results, setResults] = useState<google.maps.places.PlaceResult[]>([])
   const [results, setResults] = useState<YelpBusinessesSearchResults>(
     initialBusinesses,
   )
+  const [filter, setFilter] = useState('all')
   const debouncedKeyword = useDebounce(keyword, 500)
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setKeyword(event.target.value)
   }
-  const handleClick = (id: string) => {
-    const marker = state.markers.get(id)
-    if (marker === undefined) return
-    marker.setVisible(!marker.getVisible())
+  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setFilter(event.target.value)
   }
-
-  // useEffect(() => {
-  //   if (debouncedKeyword === '') return
-  //   console.log('state', state)
-  //   console.log('results', results)
-  //   if (state.service) {
-  //     if (!state.map) return
-  //     const request = {
-  //       location: state.map.getCenter(),
-  //       radius: 500,
-  //       query: debouncedKeyword,
-  //     }
-  //     state.service.textSearch(request, (results, status) => {
-  //       if (status === google.maps.places.PlacesServiceStatus.OK) {
-  //         console.log(results)
-  //         setResults(results)
-  //       } else setResults([])
-  //     })
-  //   }
-  // }, [debouncedKeyword])
 
   const fetchData = async () => {
     if (debouncedKeyword === '') return
-    console.log('state', state)
     if (state.service) {
       if (!state.map) return
       const query = {
@@ -79,18 +50,18 @@ export default () => {
           placeholder="Search for a place..."
           autoFocus
           value={keyword}
-          onChange={handleChange}
+          onChange={handleInputChange}
         />
-        <button
-          className="search-submit-button"
-          onClick={() => handleClick('marker')}
-        >
-          GO!
-        </button>
+        <select className="search-submit-button" onChange={handleSelectChange}>
+          <option value="all">All</option>
+          <option value="open">Open</option>
+          <option value="highRating">High rating</option>
+          <option value="lowPrice">Low price</option>
+        </select>
       </div>
       <ul className="search-results">
         {Array.isArray(results.businesses) && results.businesses.length > 0 ? (
-          <SearchResults results={results} />
+          <SearchResults results={results} filter={filter} />
         ) : (
           debouncedKeyword !== '' && <li>No results found</li>
         )}

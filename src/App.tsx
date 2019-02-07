@@ -8,7 +8,7 @@ import {
 } from 'react-navi'
 import './App.css'
 
-const App = ({navigation}: {navigation: any}) => (
+const App: React.FunctionComponent<{navigation: any}> = ({navigation}) => (
   <NavProvider navigation={navigation}>
     <NavLoading>
       {loadingRoute => (

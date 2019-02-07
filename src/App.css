@@ -104,6 +104,10 @@ button {
   .search-input {
     border: none;
   }
+
+  .search-submit-button {
+    height: 40px;
+  }
 }
 
 @media (max-width: 600px) {
