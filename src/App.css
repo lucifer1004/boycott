@@ -83,10 +83,13 @@ button {
 .search-results {
   list-style-type: none;
   overflow: scroll;
+  padding: 2px;
+  margin: 0;
 }
 
 .search-result {
   margin: 0;
+  padding: 3px 0;
 }
 
 /* Effects */
@@ -119,5 +122,8 @@ button {
   .map-content {
     height: 50vh;
     width: 100%;
+  }
+  .search-results {
+    height: 30vh;
   }
 }

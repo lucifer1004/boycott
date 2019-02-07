@@ -25,7 +25,7 @@ interface YelpBusinessCategory {
   title: string
 }
 
-interface YelpBusinessesSearchResult {
+export interface YelpBusinessesSearchResult {
   rating?: number
   price?: string
   phone?: string

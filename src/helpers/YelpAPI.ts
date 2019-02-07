@@ -13,13 +13,4 @@ const urlize = (endpoint: string, query: YelpBusinessesSearchRequest) =>
   `${baseUrl}${endpoint}?${qs.stringify(query)}`
 
 export const businessesSearch = (query: YelpBusinessesSearchRequest) =>
-  fetch(urlize('businesses/search', query), {headers})
-    .then(res => res.json())
-    .then(results => {
-      console.log(results)
-      return results
-    })
-// axios.get(urlize('businesses/search/', query), {headers}).then(results => {
-//   console.log(results)
-//   return results
-// })
+  fetch(urlize('businesses/search', query), {headers}).then(res => res.json())

@@ -1,71 +1,65 @@
 import React, {useContext, useEffect, useState} from 'react'
-// import {delay, debounce, throttle} from 'lodash'
+import {delay, debounce, throttle} from 'lodash'
 import {
   Marker,
   GoogleMapContext,
   InfoWindow,
 } from '@lucifer1004/react-google-map'
+import {YelpBusinessesSearchResult} from '../common'
 
 interface MarkerProps {
-  id: string
-  info: string
-  latitude: number
-  longitude: number
+  result: YelpBusinessesSearchResult
+  infoDisplay: boolean
+  setInfoDisplay: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-interface MarkerState {
-  position: google.maps.LatLngLiteral
-  content: string
-  showInfoWindow: boolean
-}
-
-export default ({id, info, latitude, longitude}: MarkerProps) => {
+export default ({result, infoDisplay, setInfoDisplay}: MarkerProps) => {
   const {state} = useContext(GoogleMapContext)
-  const decoratedContent = (content: string) =>
-    `<strong style="font-size: 24px; color: darkcyan;">${content}</strong>`
-  const [markerState, setMarkerState] = useState<MarkerState>({
-    position: {lat: latitude, lng: longitude},
-    content: decoratedContent(info),
-    showInfoWindow: false,
-  })
-
-  // Set dispatchers
-  const setInfoWindow = (show?: boolean) =>
-    setMarkerState(prevState => {
-      return {
-        ...prevState,
-        showInfoWindow: show === undefined ? !prevState.showInfoWindow : show,
-      }
-    })
+  const decoratedContent = (content: string) => `
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <strong style="font-size: calc(12px + 0.8vh); text-align: center; padding: 0 0 5px 0;">
+        <a href=${result.url}>
+          ${content}
+        </a>
+      </strong>
+      <img src=${result.image_url} width="100px" />
+    </div>
+  `
 
   // Set handlers
   const handleClick = () => {
-    setInfoWindow()
+    setInfoDisplay(value => !value)
   }
   const handleMouseOver = (event: google.maps.MouseEvent) => {
-    setInfoWindow(true)
+    setInfoDisplay(true)
   }
   const handleMouseOut = (event: google.maps.MouseEvent) => {
-    setInfoWindow(false)
+    delay(() => setInfoDisplay(false), 200)
   }
 
   return (
     <>
       <Marker
-        id={id}
+        id={result.id}
         opts={{
-          position: markerState.position,
+          position: {
+            lat: result.coordinates.latitude,
+            lng: result.coordinates.longitude,
+          },
         }}
         onClick={handleClick}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       />
       <InfoWindow
-        anchor={state.markers.get(id)}
+        anchor={state.markers.get(result.id)}
         opts={{
-          content: markerState.content,
+          content: decoratedContent(result.name),
         }}
-        visible={markerState.showInfoWindow}
+        visible={infoDisplay}
+        onCloseClick={() => {
+          setInfoDisplay(false)
+        }}
       />
     </>
   )

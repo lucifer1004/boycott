@@ -5,10 +5,10 @@ import React, {
   useState,
   useLayoutEffect,
 } from 'react'
-import {GoogleMapContext, Marker} from '@lucifer1004/react-google-map'
+import {GoogleMapContext} from '@lucifer1004/react-google-map'
 import {useDebounce} from '../hooks'
 import {businessesSearch} from '../helpers/YelpAPI'
-import MapElements from './MapElements'
+import SearchResults from './SearchResults'
 import {YelpBusinessesSearchResults} from '../common'
 import {initialBusinesses} from '../common/defaultData'
 
@@ -52,7 +52,6 @@ export default () => {
   const fetchData = async () => {
     if (debouncedKeyword === '') return
     console.log('state', state)
-    console.log('results', results)
     if (state.service) {
       if (!state.map) return
       const query = {
@@ -62,7 +61,7 @@ export default () => {
         term: debouncedKeyword,
       }
       const results = await businessesSearch(query)
-      setResults(results.businesses)
+      setResults(results)
     }
   }
 
@@ -91,19 +90,9 @@ export default () => {
       </div>
       <ul className="search-results">
         {Array.isArray(results.businesses) && results.businesses.length > 0 ? (
-          results.businesses.map((result: any, index: number) => (
-            <li key={index} className="search-result">
-              <p>{result.name}</p>
-              <MapElements
-                id={result.id}
-                info={result.name}
-                latitude={result.coordinates.latitude}
-                longitude={result.coordinates.longitude}
-              />
-            </li>
-          ))
-        ) : debouncedKeyword === '' ? null : (
-          <li>No results found</li>
+          <SearchResults results={results} />
+        ) : (
+          debouncedKeyword !== '' && <li>No results found</li>
         )}
       </ul>
     </div>
