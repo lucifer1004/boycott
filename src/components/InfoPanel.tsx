@@ -32,7 +32,7 @@ export default () => {
         term: debouncedKeyword,
       }
       const results = await businessesSearch(query)
-      setResults(results)
+      if (results.businesses) setResults(results)
     }
   }
 
