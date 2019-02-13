@@ -906,10 +906,10 @@
     log-update "^2.3.0"
     strip-ansi "^3.0.1"
 
-"@lucifer1004/react-google-map@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-2.3.0.tgz#8c160195950f0806ff6eed0dc1f610fe0fd73794"
-  integrity sha512-LuPgbgjCbgzJ/uUkQUlyX0wsemY3HWG1kSTubSqDiMFXXCR5Vs6LQiALbB0HNFfq9uI3Ve5sJCLHp4B31fIEGw==
+"@lucifer1004/react-google-map@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-2.5.0.tgz#f05791230d9eca5693462da9b9289442879447e6"
+  integrity sha512-BQ1G3XCE51noJXH5KqlTglgAojy7TimQWJYhrR6ccrnGRgfazpsoZkHgylRZCeTW7XFP+1Ja3LT9KBsAGQOZbw==
   dependencies:
     loadjs "3.5.5"
     react "16.8.1"
