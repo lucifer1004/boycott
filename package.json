@@ -8,7 +8,7 @@
   "dependencies": {
     "@lucifer1004/react-google-map": "2.6.1",
     "lodash": "4.17.11",
-    "navi": "0.11.0-beta.1",
+    "navi": "0.11.5",
     "qs": "6.6.0",
     "react": "16.8.2",
     "react-dom": "16.8.2",
