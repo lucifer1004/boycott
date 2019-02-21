@@ -794,14 +794,13 @@
     log-update "^2.3.0"
     strip-ansi "^3.0.1"
 
-"@lucifer1004/react-google-map@2.6.1":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-2.6.1.tgz#3e19bd0e8764098105390080426b909eeb8b20eb"
-  integrity sha512-+j3mmVXK0hX4Ew0O9vkpsap2UMMJKJc4yak+wMMjpGzVCGR5E/gn81vHqY13x2flTEb+uIipeeHKR1H6qKN+rQ==
+"@lucifer1004/react-google-map@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-3.0.0.tgz#be46605e518dd964c3923769b3a17ebd716d8639"
+  integrity sha512-q4+SUFmuG7JrDMCYP/HjPlVP/wQTCwXUObCyrnAM6azsQ+PPIvfjjoMQloBJ5s40sXqmDUu0xyoZMoTfwNRCuQ==
   dependencies:
     loadjs "^3.5.5"
-    react "^16.8.2"
-    react-dom "^16.8.2"
+    uuid "^3.3.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -8355,7 +8354,7 @@ react-dev-utils@^7.0.3:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.2, react-dom@^16.8.2:
+react-dom@16.8.2:
   version "16.8.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.2.tgz#7c8a69545dd554d45d66442230ba04a6a0a3c3d3"
   integrity sha512-cPGfgFfwi+VCZjk73buu14pYkYBR1b/SRMSYqkLDdhSEHnSwcuYTPu6/Bh6ZphJFIk80XLvbSe2azfcRzNF+Xg==
@@ -8456,7 +8455,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@16.8.2, react@^16.8.2:
+react@16.8.2:
   version "16.8.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.2.tgz#83064596feaa98d9c2857c4deae1848b542c9c0c"
   integrity sha512-aB2ctx9uQ9vo09HVknqv3DGRpI7OIGJhCx3Bt0QqoRluEjHSaObJl+nG12GDdYH6sTgE7YiPJ6ZUyMx9kICdXw==
