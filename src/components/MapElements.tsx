@@ -52,7 +52,7 @@ export default ({result, infoDisplay, setInfoDisplay}: MapElementsProps) => {
         onMouseOut={handleMouseOut}
       />
       <InfoWindow
-        anchor={state.objects.get(result.id)}
+        anchorId={result.id}
         opts={{
           content: decoratedContent(result.name),
         }}

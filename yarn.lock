@@ -794,14 +794,13 @@
     log-update "^2.3.0"
     strip-ansi "^3.0.1"
 
-"@lucifer1004/react-google-map@2.6.1":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-2.6.1.tgz#3e19bd0e8764098105390080426b909eeb8b20eb"
-  integrity sha512-+j3mmVXK0hX4Ew0O9vkpsap2UMMJKJc4yak+wMMjpGzVCGR5E/gn81vHqY13x2flTEb+uIipeeHKR1H6qKN+rQ==
+"@lucifer1004/react-google-map@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@lucifer1004/react-google-map/-/react-google-map-3.0.0.tgz#be46605e518dd964c3923769b3a17ebd716d8639"
+  integrity sha512-q4+SUFmuG7JrDMCYP/HjPlVP/wQTCwXUObCyrnAM6azsQ+PPIvfjjoMQloBJ5s40sXqmDUu0xyoZMoTfwNRCuQ==
   dependencies:
     loadjs "^3.5.5"
-    react "^16.8.2"
-    react-dom "^16.8.2"
+    uuid "^3.3.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -943,10 +942,10 @@
   resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
   integrity sha512-yALhelO3i0hqZwhjtcr6dYyaLoCHbAMshwtj6cGxTvHZAKXHsYGdff6E8EPw3xLKY0ELUTQ69Q1rQiJENnccMA==
 
-"@types/jest@24.0.5":
-  version "24.0.5"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.5.tgz#a4f9e255f460ce24896cfec89aacf1151a2131ee"
-  integrity sha512-Xj6xJ0bzP7a78ZSEY6P0Q4ZIb/YbdPiFsEUOTki6wZOE3lpANJoyjQpCe3DgUvUZGw56IMqTjFEmMaqzbteLmw==
+"@types/jest@24.0.6":
+  version "24.0.6"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.6.tgz#ba4c8c7900ce098a82ca99293cbe4192bde4f355"
+  integrity sha512-NE7FBG/F4cMDKdCBqgyd+Sa6JZ5GiMOyA5QwJdeS4Ii/Z9a18WgGbFrHbcr48/7I9HdnkaAYP+S2MmQ27qoqJA==
   dependencies:
     "@types/jest-diff" "*"
 
@@ -980,10 +979,10 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.5.1.tgz#a38f69c62528d56ba7bd1f91335a8004988d72f7"
   integrity sha512-mNhVdZHdtKHMMxbqzNK3RzkBcN1cux3AvuCYGTvjEIQT2uheH3eCAyYsbMbh2Bq8nXkeOWs1kyDiF7geWRFQ4Q==
 
-"@types/react-dom@16.8.1":
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.1.tgz#e43810a5e44b37854a9c7cd99e6c43e4f522c7c6"
-  integrity sha512-Vyo4LqUvpjNC9RMXV6kXcsvW6U/WKOuHbz+mtY43Fu8AslHjQ5/Yx+sj0agGLkbnqOlQgyIgosewcxdjMirVXA==
+"@types/react-dom@16.8.2":
+  version "16.8.2"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.2.tgz#9bd7d33f908b243ff0692846ef36c81d4941ad12"
+  integrity sha512-MX7n1wq3G/De15RGAAqnmidzhr2Y9O/ClxPxyqaNg96pGyeXUYPSvujgzEVpLo9oIP4Wn1UETl+rxTN02KEpBw==
   dependencies:
     "@types/react" "*"
 
@@ -995,10 +994,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@16.8.3":
-  version "16.8.3"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.3.tgz#7b67956f682bea30a5a09b3242c0784ff196c848"
-  integrity sha512-PjPocAxL9SNLjYMP4dfOShW/rj9FDBJGu3JFRt0zEYf77xfihB6fq8zfDpMrV6s82KnAi7F1OEe5OsQX25Ybdw==
+"@types/react@16.8.4":
+  version "16.8.4"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.4.tgz#134307f5266e866d5e7c25e47f31f9abd5b2ea34"
+  integrity sha512-Mpz1NNMJvrjf0GcDqiK8+YeOydXfD8Mgag3UtqQ5lXYTsMnOiHcKmO48LiSWMb1rSHB9MV/jlgyNzeAVxWMZRQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -6639,10 +6638,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-navi-scripts@0.11.0-beta.1:
-  version "0.11.0-beta.1"
-  resolved "https://registry.yarnpkg.com/navi-scripts/-/navi-scripts-0.11.0-beta.1.tgz#2bc6fe989ce8f64ea6508e392fd7fad01bedba36"
-  integrity sha512-jLe5YYOrOSfvQXKQb+VWcAfz7jCsrUFA3NNizURbt5KdxEndPsgD0GV5d7T9O+l2SUjM7V+ZWLFk4/JiaCZDxg==
+navi-scripts@0.11.3:
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/navi-scripts/-/navi-scripts-0.11.3.tgz#f483f9653389bde81892be9e4f52cad885148f59"
+  integrity sha512-JtxcDVGcDovjkYF1eOOHymWwrfPwHbXZjYvPTLgm23FOd77pbVrk88FOXxQn1KpZI9lwXptG3IWvkPfd7qlK3Q==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/preset-env" "^7.1.0"
@@ -6658,10 +6657,10 @@ navi-scripts@0.11.0-beta.1:
     raf "^3.4.0"
     serve-static "^1.11.2"
 
-navi@0.11.0-beta.1:
-  version "0.11.0-beta.1"
-  resolved "https://registry.yarnpkg.com/navi/-/navi-0.11.0-beta.1.tgz#3b9b5c06580b070bcafe6fc3ea52a94e121e610a"
-  integrity sha512-C2vt0N3LpcCamIuIj+aJvmYC67JpdpITszlrok9D4DRGi/LSHHwWFKpsJFKD8oPFS8AJBAJXoLg3I0PdhKeprw==
+navi@0.11.5:
+  version "0.11.5"
+  resolved "https://registry.yarnpkg.com/navi/-/navi-0.11.5.tgz#9bbaacf28d414bb2dfbbbdb2a99218a80af705a0"
+  integrity sha512-8mtgRkgWP7/u6fKPTBZpM8zAe7KPCXV28tN+D0ruCR0L0tC2oPkqW3Oq5k5yTv0L4Dvjl1Xs9RunONKifvyQqg==
   dependencies:
     history "^4.7.2"
 
@@ -8355,7 +8354,7 @@ react-dev-utils@^7.0.3:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.2, react-dom@^16.8.2:
+react-dom@16.8.2:
   version "16.8.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.2.tgz#7c8a69545dd554d45d66442230ba04a6a0a3c3d3"
   integrity sha512-cPGfgFfwi+VCZjk73buu14pYkYBR1b/SRMSYqkLDdhSEHnSwcuYTPu6/Bh6ZphJFIk80XLvbSe2azfcRzNF+Xg==
@@ -8385,10 +8384,10 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
-react-navi@0.11.0-beta.1:
-  version "0.11.0-beta.1"
-  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.11.0-beta.1.tgz#49b57f177edc0c50a1754e8677b2c8590056bd62"
-  integrity sha512-SCsumlvssN+2LkPOYgtozCmWgJw/QZjBh99hcUofru5Teu75xWytSZx8XmofYc+jgdUxOtwTBvlkOelGUBKtdA==
+react-navi@0.11.6:
+  version "0.11.6"
+  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.11.6.tgz#43570687b1df2edbb8e93430f7dcc2bb5a4b4928"
+  integrity sha512-M4YEIGNvuaN3DWAARqDJ3zoI4xXkkV6wKh75TGl5x/CyAjfKp6wieBJp1fEvmfijHr2qbWVywyUJQKY2HdId0g==
   dependencies:
     "@types/history" "^4.6.2"
     react-helmet "^5.2.0"
@@ -8456,7 +8455,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@16.8.2, react@^16.8.2:
+react@16.8.2:
   version "16.8.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.2.tgz#83064596feaa98d9c2857c4deae1848b542c9c0c"
   integrity sha512-aB2ctx9uQ9vo09HVknqv3DGRpI7OIGJhCx3Bt0QqoRluEjHSaObJl+nG12GDdYH6sTgE7YiPJ6ZUyMx9kICdXw==

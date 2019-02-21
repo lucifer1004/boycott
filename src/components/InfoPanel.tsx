@@ -23,7 +23,7 @@ export default () => {
 
   const fetchData = async () => {
     if (debouncedKeyword === '') return
-    if (state.service) {
+    if (state.places) {
       if (!state.map) return
       const query = {
         latitude: state.map.getCenter().lat(),

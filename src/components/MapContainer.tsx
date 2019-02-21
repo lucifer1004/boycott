@@ -21,10 +21,9 @@ export default () => {
           center: center,
           zoom: 15,
         }}
-        mapClass="map-content"
-        mapStyle={{}}
+        className="map-content"
+        style={{}}
         usePlaces
-        LoadedComponent={() => null}
       />
     </div>
   )
