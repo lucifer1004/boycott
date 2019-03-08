@@ -20,5 +20,5 @@ You can then visit it at `localhost:3000`
   the CORS issue)
 - Filter options: All/Open/High Rating/Low Price
 - Use of Google Map API is via
-  [`@lucifer1004/react-google-map`](https://github.com/lucifer1004/react-google-map),
+  [`@googlemap-react/core`](https://github.com/lucifer1004/react-google-map),
   which is a React wrapper for Google Map written by myself.

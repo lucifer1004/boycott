@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {GoogleMapContext} from '@lucifer1004/react-google-map'
+import {GoogleMapContext} from '@googlemap-react/core'
 import {useDebounce} from '../hooks'
 import {businessesSearch} from '../helpers/YelpAPI'
 import SearchResults from './SearchResults'

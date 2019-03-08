@@ -1,10 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react'
 import {delay, debounce, throttle} from 'lodash'
-import {
-  Marker,
-  GoogleMapContext,
-  InfoWindow,
-} from '@lucifer1004/react-google-map'
+import {Marker, GoogleMapContext, InfoWindow} from '@googlemap-react/core'
 import {YelpBusinessesSearchResult} from '../common'
 
 interface MapElementsProps {

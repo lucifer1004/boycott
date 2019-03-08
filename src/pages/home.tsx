@@ -1,5 +1,5 @@
 import React from 'react'
-import {GoogleMapProvider} from '@lucifer1004/react-google-map'
+import {GoogleMapProvider} from '@googlemap-react/core'
 import InfoPanel from '../components/InfoPanel'
 import MapContainer from '../components/MapContainer'
 

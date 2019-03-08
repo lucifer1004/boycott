@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {MapBox} from '@lucifer1004/react-google-map'
+import {MapBox} from '@googlemap-react/core'
 
 export default () => {
   const [center, setCenter] = useState({lat: 40.7128, lng: -74.006})
