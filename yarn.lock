@@ -913,10 +913,10 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
-"@types/googlemaps@3.30.18":
-  version "3.30.18"
-  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.30.18.tgz#c7076c68bff44e99c09b99926568a6a3fb15be44"
-  integrity sha512-rXYs277SHf7ceAR7RSoGh/fkYvy2eBl5mvmMlUEcPMMkwCP9XkFdwrtDZ4OGeEawOfnwauu/yoi0eTpfGp4MPg==
+"@types/googlemaps@3.30.19":
+  version "3.30.19"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.30.19.tgz#359c025e244490b0775826fb216bed093fd66b16"
+  integrity sha512-9uzg5jC6FRyAsMrhOLnUbblyN1xbcOVnqecQZxrnCDxTKssn4lwk0K4EWsw/sw8cJX32MFRMivyAT8dX/JBatg==
 
 "@types/history@^4.6.2":
   version "4.7.2"

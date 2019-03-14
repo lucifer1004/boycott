@@ -15,7 +15,7 @@
     "react-navi": "0.11.7"
   },
   "devDependencies": {
-    "@types/googlemaps": "3.30.18",
+    "@types/googlemaps": "3.30.19",
     "@types/jest": "24.0.9",
     "@types/lodash": "4.14.122",
     "@types/node": "11.10.5",
