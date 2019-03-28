@@ -10,8 +10,8 @@
     "lodash": "4.17.11",
     "navi": "0.12.4",
     "qs": "6.7.0",
-    "react": "16.8.5",
-    "react-dom": "16.8.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "react-navi": "0.12.4"
   },
   "devDependencies": {
