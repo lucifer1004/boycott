@@ -8376,10 +8376,10 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
-react-navi@0.12.4:
-  version "0.12.4"
-  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.12.4.tgz#152d3d9314f3c9b304bdfc8649a3d0735dc64c7a"
-  integrity sha512-bAlHanQdpdIk4fcbxQqY12BgZHJA7l0SOQ40pvTHm8RfCVZo2bMFZemmXyixcy8buztasR/cKf6NzUcXv38omw==
+react-navi@0.12.6:
+  version "0.12.6"
+  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.12.6.tgz#332653c180e054cdbde8022f251bdbba1866daf6"
+  integrity sha512-9GoFeZestHaFoL6doHgTIcD7RDvOWmhx6Ch0BJFy32PUBwzq2DnOKqNKJRQvLJ0RvoucUa2nBzhupkeilmDi4A==
   dependencies:
     "@types/history" "^4.6.2"
     react-helmet "^5.2.0"
