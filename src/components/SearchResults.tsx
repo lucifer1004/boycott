@@ -41,7 +41,7 @@ export default ({results, filter}: SearchResultsProps) => {
             case 'lowPrice':
               return result.price === '$' || result.price === '$$'
             default:
-              return
+              return result
           }
         })
         .map(result => {
