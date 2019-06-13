@@ -28,7 +28,7 @@
     "navi-scripts": "0.12.4",
     "prettier": "1.17.1",
     "react-scripts": "3.0.1",
-    "typescript": "3.5.1"
+    "typescript": "3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
