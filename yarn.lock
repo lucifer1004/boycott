@@ -1530,10 +1530,10 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/googlemaps@3.36.3":
-  version "3.36.3"
-  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.36.3.tgz#3d3dded3b56f8369b3a6ffafc408473037fb34c7"
-  integrity sha512-VDB9ub0q5hf/Ri/bblc9Q/rzqE95CzZCSWMcpeVzmzr+w2Kef2fRnnr5QZBePhbqNh8GNyfac812A46eqwcWeg==
+"@types/googlemaps@3.36.5":
+  version "3.36.5"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.36.5.tgz#9fa57d430e4982ce9f2352e1a48dfe5c294fe868"
+  integrity sha512-ft36SAiK2eJIC+dovC8iJNbfREYAq7toDizRttCLV7tX427s72LXwSW9aWjbS+pLRbMhjV29WBR8iGvtytRuNg==
 
 "@types/history@^4.6.2":
   version "4.7.2"
