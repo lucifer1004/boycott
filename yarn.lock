@@ -1192,12 +1192,12 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@googlemap-react/core@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@googlemap-react/core/-/core-0.1.3.tgz#0a24a21762cdb38ae5287348510472c00654340a"
-  integrity sha512-Pew3jmDyW22NYh/3o4nTIDcD5bihfbswhyb55iy7nlWCRJFIFx1t6G0v1auuoBwCw5qUkPhky4bf3Yqp+Eb+5g==
+"@googlemap-react/core@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@googlemap-react/core/-/core-0.1.4.tgz#c7f0bc5ac7b84048f2bd3d8023b181abebf9c2c6"
+  integrity sha512-BO/iSdyDL6Sm2lQTV36TD00q/7+EaeoTRhQpap65klsPbPJUqiQE8SB9PeG1LtN9X4vwUsc+ic75MI/C3rX3hw==
   dependencies:
-    loadjs "^3.5.5"
+    loadjs "^3.6.1"
     uuid "^3.3.2"
 
 "@hapi/address@2.x.x":
@@ -6523,10 +6523,10 @@ loader-utils@1.2.3, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loadjs@^3.5.5:
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/loadjs/-/loadjs-3.5.5.tgz#2fbaa981ffdd079e0f8786ea75aeed643483b368"
-  integrity sha512-qBuLnKt4C6+vctutozFqPHQ6s4SSa9tcE64NsvDJ92UZmUrFvqGI1oVOtnZz2xwpgOT+2niQtHtQIDP4e/wlTA==
+loadjs@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/loadjs/-/loadjs-3.6.1.tgz#1e756ccd4f4c5ed4988085b330e1b4ad9b6a8340"
+  integrity sha512-AZEBw2GWdJk2IzBgQ+Wohoao5j+t0rajqK8dJu8jQqgYxDTxhmCt0ayMo/vCa0ZAMvZxnJcam6uLICfnVd8KAw==
 
 locate-path@^2.0.0:
   version "2.0.0"
