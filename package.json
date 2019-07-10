@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@googlemap-react/core": "0.1.4",
-    "lodash": "4.17.11",
+    "lodash": "4.17.14",
     "navi": "0.12.9",
     "qs": "6.7.0",
     "react": "16.8.6",
