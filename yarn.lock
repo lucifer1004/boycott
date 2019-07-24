@@ -1192,10 +1192,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@googlemap-react/core@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@googlemap-react/core/-/core-0.1.4.tgz#c7f0bc5ac7b84048f2bd3d8023b181abebf9c2c6"
-  integrity sha512-BO/iSdyDL6Sm2lQTV36TD00q/7+EaeoTRhQpap65klsPbPJUqiQE8SB9PeG1LtN9X4vwUsc+ic75MI/C3rX3hw==
+"@googlemap-react/core@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@googlemap-react/core/-/core-0.1.5.tgz#cef06f11c0b90a19b03b02b3bcde3ef2b0088c17"
+  integrity sha512-zqpv8IS53IJd4/ILWO4mh49KCsbM08tGJ6/P3SMm6qcAkNFgdZs8601S8ffgN7ugzWN25rYBiOj+2PHky6/NtA==
   dependencies:
     loadjs "^3.6.1"
     uuid "^3.3.2"
