@@ -6,29 +6,29 @@
   "author": "Gabriel Wu <qqbbnease1004@126.com>",
   "license": "MIT",
   "dependencies": {
-    "@googlemap-react/core": "0.1.4",
-    "lodash": "4.17.11",
-    "navi": "0.12.9",
+    "@googlemap-react/core": "0.1.5",
+    "lodash": "4.17.15",
+    "navi": "0.13.3",
     "qs": "6.7.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-navi": "0.12.9"
+    "react-navi": "0.13.3"
   },
   "devDependencies": {
-    "@types/googlemaps": "3.36.5",
+    "@types/googlemaps": "3.37.0",
     "@types/jest": "24.0.15",
-    "@types/lodash": "4.14.135",
-    "@types/node": "12.0.10",
+    "@types/lodash": "4.14.136",
+    "@types/node": "12.6.8",
     "@types/qs": "^6.5.3",
-    "@types/react": "16.8.22",
-    "@types/react-dom": "16.8.4",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.5",
     "eslint-plugin-prettier": "3.1.0",
-    "husky": "2.7.0",
-    "lint-staged": "8.2.1",
-    "navi-scripts": "0.12.9",
+    "husky": "3.0.1",
+    "lint-staged": "9.2.0",
+    "navi-scripts": "0.13.3",
     "prettier": "1.18.2",
     "react-scripts": "3.0.1",
-    "typescript": "3.5.2"
+    "typescript": "3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
