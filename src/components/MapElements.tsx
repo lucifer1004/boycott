@@ -1,6 +1,6 @@
-import React, {useContext, useEffect, useState} from 'react'
-import {delay, debounce, throttle} from 'lodash'
-import {Marker, GoogleMapContext, InfoWindow} from '@googlemap-react/core'
+import React from 'react'
+import {delay} from 'lodash'
+import {Marker, InfoWindow} from '@googlemap-react/core'
 import {YelpBusinessesSearchResult} from '../common'
 
 interface MapElementsProps {
@@ -10,7 +10,6 @@ interface MapElementsProps {
 }
 
 export default ({result, infoDisplay, setInfoDisplay}: MapElementsProps) => {
-  const {state} = useContext(GoogleMapContext)
   const decoratedContent = (content: string) => `
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <strong style="font-size: calc(12px + 0.8vh); text-align: center; padding: 0 0 5px 0;">

@@ -1,43 +1,33 @@
 import React from 'react'
-import {
-  NavLink,
-  NavProvider,
-  NavContent,
-  NavLoading,
-  NavNotFoundBoundary,
-} from 'react-navi'
+import {Link, NotFoundBoundary, useLoadingRoute} from 'react-navi'
 import './App.css'
 
-const App: React.FunctionComponent<{navigation: any}> = ({navigation}) => (
-  <NavProvider navigation={navigation}>
-    <NavLoading>
-      {loadingRoute => (
-        <div className="App">
-          {loadingRoute && <div className="App-loading-bar" />}
-          <header>
-            <nav>
-              <NavLink href="/">Home</NavLink>
-            </nav>
-            <nav>
-              <NavLink href="/places">Places</NavLink>
-            </nav>
-            <nav>
-              <NavLink href="/about">About</NavLink>
-            </nav>
-          </header>
-          <NavNotFoundBoundary render={renderNotFound}>
-            <NavContent />
-          </NavNotFoundBoundary>
-        </div>
-      )}
-    </NavLoading>
-  </NavProvider>
+const renderNotFound = () => (
+  <div className="Layout-error">
+    <h1>404 - Not Found</h1>
+  </div>
 )
 
-const renderNotFound = () => {
+const App = ({children}: {children: React.ReactNode}) => {
+  let loadingRoute = useLoadingRoute()
+
   return (
-    <div className="App-error">
-      <h1>404 - Not Found</h1>
+    <div className="App">
+      {loadingRoute && <div className="App-loading-bar" />}
+      <header>
+        <nav>
+          <Link href="/">Home</Link>
+        </nav>
+        <nav>
+          <Link href="/places">Places</Link>
+        </nav>
+        <nav>
+          <Link href="/about">About</Link>
+        </nav>
+      </header>
+      <main>
+        <NotFoundBoundary render={renderNotFound}>{children}</NotFoundBoundary>
+      </main>
     </div>
   )
 }
