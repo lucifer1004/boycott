@@ -12,7 +12,7 @@
     "qs": "6.7.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-navi": "0.13.5"
+    "react-navi": "0.13.6"
   },
   "devDependencies": {
     "@types/googlemaps": "3.37.3",
