@@ -1270,13 +1270,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@googlemap-react/core@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@googlemap-react/core/-/core-0.1.5.tgz#cef06f11c0b90a19b03b02b3bcde3ef2b0088c17"
-  integrity sha512-zqpv8IS53IJd4/ILWO4mh49KCsbM08tGJ6/P3SMm6qcAkNFgdZs8601S8ffgN7ugzWN25rYBiOj+2PHky6/NtA==
+"@googlemap-react/core@0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@googlemap-react/core/-/core-0.1.14.tgz#4e65279019a4e493467ffa6ec8d138066cb6c6c4"
+  integrity sha512-yFUOP5mMSbXNNOA4DWySW1G+KkyLDxT9vxRyOQR2voZnYJoE40UyIUPCmCNpoyW3eC8RTt+Z84az0dYc+tQm1A==
   dependencies:
-    loadjs "^3.6.1"
-    uuid "^3.3.2"
+    loadjs "^4.0.1"
+    uuid "^8.3.2"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -6803,10 +6803,10 @@ loader-utils@1.2.3, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loadjs@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/loadjs/-/loadjs-3.6.1.tgz#1e756ccd4f4c5ed4988085b330e1b4ad9b6a8340"
-  integrity sha512-AZEBw2GWdJk2IzBgQ+Wohoao5j+t0rajqK8dJu8jQqgYxDTxhmCt0ayMo/vCa0ZAMvZxnJcam6uLICfnVd8KAw==
+loadjs@^4.0.1:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/loadjs/-/loadjs-4.2.0.tgz#2a0336376397a6a43edf98c9ec3229ddd5abb6f6"
+  integrity sha512-AgQGZisAlTPbTEzrHPb6q+NYBMD+DP9uvGSIjSUM5uG+0jG15cb8axWpxuOIqrmQjn6scaaH8JwloiP27b2KXA==
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -10907,6 +10907,11 @@ uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"

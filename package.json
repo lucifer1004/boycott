@@ -6,7 +6,7 @@
   "author": "Gabriel Wu <qqbbnease1004@126.com>",
   "license": "MIT",
   "dependencies": {
-    "@googlemap-react/core": "0.1.5",
+    "@googlemap-react/core": "0.1.14",
     "lodash": "4.17.15",
     "navi": "0.13.6",
     "qs": "6.8.0",
