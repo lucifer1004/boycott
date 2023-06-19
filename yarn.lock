@@ -7315,10 +7315,10 @@ navi-scripts@0.13.3:
     raf "^3.4.0"
     serve-static "^1.11.2"
 
-navi@0.13.6:
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/navi/-/navi-0.13.6.tgz#2ad7859a022222fbdb02b74807755ee914089018"
-  integrity sha512-qZl/TuG7e/AEYHzvrCqVOAv/RPz2U24MvHapMzS+l/fCrn+LtWbCTNIx7kewI7W46Ko5fkI9kQ8kmt9tyVOgWg==
+navi@0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/navi/-/navi-0.15.0.tgz#bb9d3a8d15aaf13c109b25b30ce6c4c19fd1a290"
+  integrity sha512-RKJ/PCOBzF7VU2cdIu57mMO7eo8JyT2I0zyXHCoJOzbyOMtWMVlsvW7KLVaPfICMYxmI9tU1DCgM8qsTe72lKg==
   dependencies:
     history "^4.9.0"
 
